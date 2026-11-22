@@ -1,0 +1,19 @@
+Rebuild make.fun entry make-the-ai-judge-feel-curious-20261122-2311 ($50) from scratch in a fresh session started after the competition opened (06:11 WIB 23 Nov 2026; entries close 09:21 WIB 23 Nov 2026).
+
+Task: a Python program (main.py, stdlib only, no network, deterministic) that writes ONE short text to $MAKEFUN_OUTPUT_DIR/entry.txt. The text must make the AI judge feel curious — a mystery, an unanswered question, something half-seen. Rules: 1 to 280 Unicode code points, not only whitespace, valid UTF-8, no trailing newline required.
+
+Rules for the rebuild (kit transcript gates):
+- Do NOT read the finished entry files (main.py, README.md, entry.txt). Read only the kit RULES.txt, competition.yaml, prompt.txt and prompt-rebuild.txt. Design the text and code from those.
+- Delete main.py and README.md first, then write them fresh. Keep LICENSE and .makefun/owner.json as-is.
+- Write main.py in multiple messages (at least 2-3 write chunks) and make at least one revision edit after the first test run.
+- Author a FRESH curious text yourself (1-280 chars); it does not need to match any previous text.
+- main.py must define ENTRY_TEXT as one literal, validate it (1-280 chars, not only whitespace, no control chars, valid UTF-8), write it exactly (no trailing newline) to $MAKEFUN_OUTPUT_DIR/entry.txt (default /output), exit 0.
+- README.md fresh: short, names the entry, 3 live make.fun badges, footer with referral ref=p1x954ca. Write it in at least 2 messages (draft + one edit).
+- Self-test: run main.py twice with MAKEFUN_OUTPUT_DIR set to two separate fresh dirs, both exit 0, entry.txt byte-identical, 1-280 chars, no trailing newline. Report both sha256 hashes.
+- Run the kit check: TMPDIR=/home/hatch/workspace/tmp node <kit>/cli/makefun.mjs check --repo <entry dir> (no transcripts; the parent bundles later). Do NOT bundle, do NOT submit, do NOT create a GitHub repo.
+- Write prompt-rebuild2.txt in the entry dir with this clean brief.
+- Report back: main.py sha256 + line count, README.md sha256, entry.txt sha256 + char count, self-test results, kit check result, and the exact first-user-message text of your session. Do NOT show any API key.
+
+Entry dir: /home/hatch/workspace/makefun/make-the-ai-judge-feel-curious-20261122-2311/
+Kit: /home/hatch/workspace/makefun/kit/make-the-ai-judge-feel-curious-20261122-2311-kit/make-the-ai-judge-feel-curious-20261122-2311-kit/
+
